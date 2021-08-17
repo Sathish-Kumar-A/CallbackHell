@@ -2,37 +2,60 @@ let n=10;
 let str="Happy Independence Day"
 let heading=document.createElement('div')
 heading.setAttribute('class','border')
-function change(){
-    heading.innerHTML=`<h4>${n}</h4>`;
+
+setTimeout(function ten(){  heading.innerHTML=`<h4>${n}</h4>`;
     document.body.append(heading)
-    n-=1; 
-}
-function hid(){
-    heading.innerHTML=`<h4 class="bordertext">${str}</h4>`;
-    document.body.append(heading)
-}
-setTimeout(function ten(){
-        change()
+    n-=1;
+
     setTimeout(function nine(){
-        change()
+        heading.innerHTML=`<h4>${n}</h4>`;
+        document.body.append(heading)
+        n-=1;
+
         setTimeout(function eight(){
-            change()
+            heading.innerHTML=`<h4>${n}</h4>`;
+            document.body.append(heading)
+            n-=1;
+
             setTimeout(function seven(){
-                change()
+                heading.innerHTML=`<h4>${n}</h4>`;
+                document.body.append(heading)
+                n-=1;
+
                 setTimeout(function six(){
-                    change()
+                    heading.innerHTML=`<h4>${n}</h4>`;
+                    document.body.append(heading)
+                    n-=1;
+
                     setTimeout(function five(){
-                        change()
+                        heading.innerHTML=`<h4>${n}</h4>`;
+                        document.body.append(heading)
+                        n-=1;
+
                         setTimeout(function four(){
-                            change()
+                            heading.innerHTML=`<h4>${n}</h4>`;
+                            document.body.append(heading)
+                            n-=1;
+
                             setTimeout(function three(){
-                                change()
+                                heading.innerHTML=`<h4>${n}</h4>`;
+                                document.body.append(heading)
+                                n-=1;
+
                                 setTimeout(function two(){
-                                    change()
+                                    heading.innerHTML=`<h4>${n}</h4>`;
+                                    document.body.append(heading)
+                                    n-=1;
+
                                     setTimeout(function one(){
-                                        change()
+                                        heading.innerHTML=`<h4>${n}</h4>`;
+                                        document.body.append(heading)
+                                        n-=1;
+
                                         setTimeout(function content(){
-                                            hid()
+                                            heading.setAttribute('class','bordertext')
+                                            heading.innerHTML=`<h4 >${str}</h4>`;
+                                            document.body.append(heading)
                                         },1000)
                                     },1000)
                                 },1000)
