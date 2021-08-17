@@ -1,38 +1,36 @@
 let n=10;
 let str="Happy Independence Day"
-function reduction(){
-    let heading=document.createElement('div')
-    heading.setAttribute('class','border')
+let heading=document.createElement('div')
+heading.setAttribute('class','border')
+function change(){
     heading.innerHTML=`<h4>${n}</h4>`;
     document.body.append(heading)
-        n-=1;
+    n-=1; 
 }
 function hid(){
-    let heading=document.createElement('div')
-    heading.setAttribute('class','bordertext')
-    heading.innerHTML=`<h4>${str}</h4>`;
+    heading.innerHTML=`<h4 class="bordertext">${str}</h4>`;
     document.body.append(heading)
 }
 setTimeout(function ten(){
-    reduction()
+        change()
     setTimeout(function nine(){
-        reduction()
+        change()
         setTimeout(function eight(){
-            reduction()
+            change()
             setTimeout(function seven(){
-                reduction()
+                change()
                 setTimeout(function six(){
-                    reduction()
+                    change()
                     setTimeout(function five(){
-                        reduction()
+                        change()
                         setTimeout(function four(){
-                            reduction()
+                            change()
                             setTimeout(function three(){
-                                reduction()
+                                change()
                                 setTimeout(function two(){
-                                    reduction()
+                                    change()
                                     setTimeout(function one(){
-                                        reduction()
+                                        change()
                                         setTimeout(function content(){
                                             hid()
                                         },1000)
