@@ -1,0 +1,28 @@
+body{
+    transition:1s;
+
+}
+.border{
+    box-shadow: 0 10px 10px rgba(50,50,50,0.1);
+    height:30px;
+    width:50px;
+    transition: 1s;
+    background-color: teal;
+    border-radius: 5px;
+}
+h4{
+    text-align: center;
+    color: white;
+    line-height: 30px;
+}
+.bordertext{
+    box-shadow: 0 10px 10px rgba(50,50,50,0.1);
+    height:30px;
+    width:300px;
+    transition: 1s;
+    background-color: teal;
+    border-radius: 5px;
+}
+.border:hover, .bordertext:hover{
+    background-color: crimson;
+}
